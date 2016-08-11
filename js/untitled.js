@@ -14,18 +14,21 @@ function randomFrom(heading_array){
 
 
 
-$(document).ready(function() {
+// $(document).ready(function() {
 
-	console.log('test the javavscript');
+// 	// var x = 'hello';
+// 	// alert(x);
 
-	// console.log(window.location.pathname);
-	if (window.location.pathname=="/") {
-		// code that runs on the home page
-		console.log('home page');
-	}
-	else if (window.location.pathname=="/geology_detail.html") {
-		// code that runs on some other specific page 
-		console.log('geology page');
+// 	console.log('test the javavscript');
+
+// 	// console.log(window.location.pathname);
+// 	if (window.location.pathname=="/") {
+// 		// code that runs on the home page
+// 		console.log('home page');
+// 	}
+// 	else if (window.location.pathname=="/geology_detail.html") {
+// 		// code that runs on some other specific page 
+// 		console.log('geology page');
 
 
 		// or you can use http://www.w3schools.com/jsref/met_win_setinterval.asp
@@ -36,9 +39,9 @@ $(document).ready(function() {
 		// 	img_div.attr("src","http://i.imgur.com/rpLHOisb.jpg");
 		// }, 5000);
 	
-	}
+// 	}
 
-});
+// });
 
 
 //video embeds, or do these have to be links
