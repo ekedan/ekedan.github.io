@@ -1,47 +1,23 @@
 console.log('hello');
 
-//array of elements/pages
-var heading_array = ["geology", "bathroom", "cafeteria", "bombs", "infrastructure", "food cart", "westbeth", "labs", "futures", "sculpture", "pipes"];
+// All your functions, arrays, etc - can live out here!
 
-// var ri = Math.floor(Math.random() * heading_array.length); // Random Index position in the array
-// var result = heading_array[ri];
+// var figCaptions = ["(9 evenings)", "(war on terror)", "(service dining room)", "(1971)", "(1966)", "(1895)", "(1936-1938)", "(A Mathematical Theory of Communication)", "(E.A.T.)", "(2G lunchroom)", "('its a photograph come to life')", "(underground chinese kitchen)", "(divining rod)", "(rice *gyro* lamb gyro *falafel gyro* hot dog)", "(2500 meals per day)", "(150 gallons ice cream per week, 1000 lb. mashed potatoes per week)", "(commons)", "(corporate research powerhouse)", "(Can machines think?)"];
 
-
-function randomFrom(heading_array){
-    var randomIndex = Math.floor(Math.random() * heading_array.length);
-    return arr[randomIndex];
+// This function takes in an array and outputs a random element in that array
+function randomFrom(array){
+    var randomIndex = Math.floor(Math.random() * array.length);
+    return array[randomIndex];
 }
 
 
 
-// $(document).ready(function() {
-
-// 	// var x = 'hello';
-// 	// alert(x);
-
-// 	console.log('test the javavscript');
-
-// 	// console.log(window.location.pathname);
-// 	if (window.location.pathname=="/") {
-// 		// code that runs on the home page
-// 		console.log('home page');
-// 	}
-// 	else if (window.location.pathname=="/geology_detail.html") {
-// 		// code that runs on some other specific page 
-// 		console.log('geology page');
-
-
-		// or you can use http://www.w3schools.com/jsref/met_win_setinterval.asp
-		// to have it happen on an interval
-
-		// setTimeout(function() {
-		// 	var img_div = $('.detail-img');
-		// 	img_div.attr("src","http://i.imgur.com/rpLHOisb.jpg");
-		// }, 5000);
-	
-// 	}
-
-// });
+// Document ready waits until all html elements (or DOMs) have loaded, then fills in random caption
+// Anything that is assigning text, imgs src, etc should live in here!
+$(document).ready(function() {
+    var caption = randomFrom(figCaptions); // Select a random caption – uses the figCaptions array created in a separate script
+    $('.description-wrapper').text(caption); // Set the text of the description wrapper to the randomly selected caption
+});
 
 
 //video embeds, or do these have to be links
