@@ -133,8 +133,8 @@ img {
 }
 
 .main-links {
-    margin-left: 100px;
-    margin-top: 195px;
+    margin-left: 75px;
+    margin-top: 150px;
 }
 .main-link {
     margin-right: 30px;
@@ -142,6 +142,3 @@ img {
     text-decoration:none;
 }
 
-a.test-link {
-    color:green;
-}
