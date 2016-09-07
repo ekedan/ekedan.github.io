@@ -10,8 +10,6 @@ function randomFrom(array){
     return array[randomIndex];
 }
 
-
-
 // Document ready waits until all html elements (or DOMs) have loaded, then fills in random caption
 // Anything that is assigning text, imgs src, etc should live in here!
 $(document).ready(function() {
@@ -19,6 +17,11 @@ $(document).ready(function() {
     $('.description-wrapper').text(caption); // Set the text of the description wrapper to the randomly selected caption
 });
 
+
+// $(document).ready(function() {
+//     var image = randomFrom(imgCenter); // Select a random caption – uses the figCaptions array created in a separate script
+//     $('.description-wrapper').text(image); // Set the text of the description wrapper to the randomly selected caption
+// });
 
 //video embeds, or do these have to be links
 
