@@ -2,8 +2,6 @@ console.log('hello');
 
 // All your functions, arrays, etc - can live out here!
 
-// var figCaptions = ["(9 evenings)", "(war on terror)", "(service dining room)", "(1971)", "(1966)", "(1895)", "(1936-1938)", "(A Mathematical Theory of Communication)", "(E.A.T.)", "(2G lunchroom)", "('its a photograph come to life')", "(underground chinese kitchen)", "(divining rod)", "(rice *gyro* lamb gyro *falafel gyro* hot dog)", "(2500 meals per day)", "(150 gallons ice cream per week, 1000 lb. mashed potatoes per week)", "(commons)", "(corporate research powerhouse)", "(Can machines think?)"];
-
 // This function takes in an array and outputs a random element in that array
 function randomFrom(array){
     var randomIndex = Math.floor(Math.random() * array.length);
@@ -12,25 +10,28 @@ function randomFrom(array){
 
 // Document ready waits until all html elements (or DOMs) have loaded, then fills in random caption
 // Anything that is assigning text, imgs src, etc should live in here!
+// $(document).ready(function() {
+//     var caption = randomFrom(figCaptions); // Select a random caption – uses the figCaptions array created in a separate script
+//     $('.description-wrapper').text(caption); // Set the text of the description wrapper to the randomly selected caption
+// });
+
+
 $(document).ready(function() {
-    var caption = randomFrom(figCaptions); // Select a random caption – uses the figCaptions array created in a separate script
-    $('.description-wrapper').text(caption); // Set the text of the description wrapper to the randomly selected caption
+    var figCaptions = ["(9 evenings)", "(war on terror)", "(service dining room)", "(1971)", "(1966)", "(1895)", "(1936-1938)", "(A Mathematical Theory of Communication)", "(E.A.T.)", "(2G lunchroom)", "(rules for teachers and students)", "('its a photograph come to life')", "(underground chinese kitchen)", "(halal atm)","(halal atm bomb)","(divining rod)", "(rice *gyro* lamb gyro *falafel gyro* hot dog)", "(2500 meals per day)", "(150 gallons ice cream per week, 1000 lb. mashed potatoes per week)", "(corporate research powerhouse)", "(Can machines think?)"];
+    var caption = randomFrom(figCaptions); 
+    $('.description-wrapper').text(caption); 
 });
 
 
-// $(document).ready(function() {
-//     var image = randomFrom(imgCenter); // Select a random caption – uses the figCaptions array created in a separate script
-//     $('.description-wrapper').text(image); // Set the text of the description wrapper to the randomly selected caption
-// });
 
-//video embeds, or do these have to be links
+//VIDEO EMBEDs
 
 //<iframe width="420" height="315" src="https://www.youtube.com/embed/misc407kWvs" frameborder="0" allowfullscreen></iframe>
 //<iframe width="560" height="315" src="https://www.youtube.com/embed/zUE5UClp1Ys" frameborder="0" allowfullscreen></iframe>
 //<iframe width="560" height="315" src="https://www.youtube.com/embed/pc0TrN3v-8w" frameborder="0" allowfullscreen></iframe>
 //<iframe width="560" height="315" src="https://www.youtube.com/embed/70xDCokzAck" frameborder="0" allowfullscreen></iframe>
 
-//array of captions
+//CAPTIONS
 // ['plantation', 1971', '1966', '1895', '1936', '1948', '1952', 'A Mathematical Theory of Communication', 'spring street', E.A.T.', '2-G lunchroom', 'war on terror', '9 evenings', 'west st. cafeteria', 'Bell Labs', 'underground chinese kitchen', 'divining rod', 'an object is no longer an object', "feed 4,000 24/7", 
 // '2,500 meals per day', 'cryptanalysts', 'water fountain', 'westbeth playwrights feminist collective', '150 gallons of ice cream per week', 'dance riots', 'corporate research powerhouse', 'Hudson River', 'Alan Turing', 'Claude Shannon', 'Merce Cunningham', 'minimalism', 'cold civil wars on terror', 'convention summers','like a photograph come to life']
 
