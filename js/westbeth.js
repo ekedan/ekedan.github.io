@@ -17,7 +17,7 @@ function randomFrom(array){
 
 
 $(document).ready(function() {
-    var figCaptions = ["(9 evenings)", "(war on terror)", "(service dining room)", "(1971)", "(1966)", "(1895)", "(1936-1938)", "(A Mathematical Theory of Communication)", "(E.A.T.)", "(2G lunchroom)", "("quantum mechanics study groups with tea and cookies")", "(rules for teachers and students)", "('its a photograph come to life')", "(underground chinese kitchen)", "(halal atm)","(halal atm bomb)","(divining rod)", "(rice *gyro* lamb gyro *falafel gyro* hot dog)", "(2500 meals per day)", "(150 gallons ice cream per week, 1000 lb. mashed potatoes per week)", "(corporate research powerhouse)", "(Can machines think?)"];
+    var figCaptions = ["(9 evenings)", "(war on terror)", "(service dining room)", "(1971)", "(1966)", "(1895)", "(1936-1938)", "(A Mathematical Theory of Communication)", "(E.A.T.)", "(2G lunchroom)", "(quantum mechanics study groups with tea and cookies)", "(rules for teachers and students)", "('its a photograph come to life')", "(underground chinese kitchen)", "(halal atm)","(halal atm bomb)","(divining rod)", "(rice *gyro* lamb gyro *falafel gyro* hot dog)", "(2500 meals per day)", "(150 gallons ice cream per week, 1000 lb. mashed potatoes per week)", "(corporate research powerhouse)", "(Can machines think?)"];
     var caption = randomFrom(figCaptions); 
     $('.description-wrapper').text(caption); 
 });
