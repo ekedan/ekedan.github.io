@@ -10,19 +10,22 @@ function randomFrom(array){
 
 // Document ready waits until all html elements (or DOMs) have loaded, then fills in random caption
 // Anything that is assigning text, imgs src, etc should live in here!
+$(document).ready(function() {
+    var caption = randomFrom(figCaptions); // Select a random caption – uses the figCaptions array created in a separate script
+    $('.description-wrapper').text(caption); // Set the text of the description wrapper to the randomly selected caption
+});
+
+
 // $(document).ready(function() {
-//     var caption = randomFrom(figCaptions); // Select a random caption – uses the figCaptions array created in a separate script
-//     $('.description-wrapper').text(caption); // Set the text of the description wrapper to the randomly selected caption
+//     var figCaptions = ["(9 evenings)", "(war on terror)", "(service dining room)", "(1971)", "(1966)", "(1895)", "(1936-1938)", "(A Mathematical Theory of Communication)", "(E.A.T.)", "(2G lunchroom)", "(quantum mechanics study groups w/ tea and cookies)", "(rules for teachers and students)", "(underground chinese kitchen)", "(halal atm)","(halal atm bomb)","(divining rod)", "(rice *gyro* lamb gyro *falafel gyro* hot dog)", "(2500 meals per day)", "(150 gallons ice cream per week, 1000 lb. mashed potatoes per week)", "(corporate research powerhouse)", "(Can machines think?)"];
+//     var caption = randomFrom(figCaptions); 
+//     $('.description-wrapper').text(caption); 
 // });
 
 
-$(document).ready(function() {
-    var figCaptions = ["(9 evenings)", "(war on terror)", "(service dining room)", "(1971)", "(1966)", "(1895)", "(1936-1938)", "(A Mathematical Theory of Communication)", "(E.A.T.)", "(2G lunchroom)", "(quantum mechanics study groups w/ tea and cookies)", "(rules for teachers and students)", "(underground chinese kitchen)", "(halal atm)","(halal atm bomb)","(divining rod)", "(rice *gyro* lamb gyro *falafel gyro* hot dog)", "(2500 meals per day)", "(150 gallons ice cream per week, 1000 lb. mashed potatoes per week)", "(corporate research powerhouse)", "(Can machines think?)"];
-    var caption = randomFrom(figCaptions); 
-    $('.description-wrapper').text(caption); 
-});
 
 //SOURCE/BIBLIO
+//Landmarks Preservation Commission, October 25, 2011, Designation List 449, LP-2391 (Bell Telephone Labaratories Complex ) http://www.nyc.gov/html/lpc/downloads/pdf/reports/2391.pdf 
 //http://westviewnews.org/2013/07/playground-for-geniuses-bell-labs-in-the-1930s/
 //bpNichol First Screening poem modification http://vispo.com/bp/introduction.htm
 //Bell Labs Archives
